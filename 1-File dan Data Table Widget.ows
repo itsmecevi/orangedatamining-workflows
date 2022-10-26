@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='utf-8'?>
+<scheme version="2.0" title="File and Data Table" description="The basic data mining units in Orange are called widgets. There are widgets for reading the data, preprocessing, visualization, clustering, classification and others. Widgets communicate through channels. Data mining workflow is thus a collection of widgets and communication channels.&#10;&#10;In this workflow, there is a File widget that reads the data. File widget communicates this data to Data Table widget that shows the data spreadsheet. Notice how the output of the file widget is connected to the input of the Data Table widget. In Orange, the outputs of the widgets are on the right, and the inputs on the left of the widget.">
+	<nodes>
+		<node id="0" name="File" qualified_name="Orange.widgets.data.owfile.OWFile" project_name="Orange3" version="" title="File" position="(168.0, 328.0)" />
+		<node id="1" name="Data Table" qualified_name="Orange.widgets.data.owtable.OWDataTable" project_name="Orange3" version="" title="Data Table" position="(571.0, 328.0)" />
+	</nodes>
+	<links>
+		<link id="0" source_node_id="0" sink_node_id="1" source_channel="Data" sink_channel="Data" enabled="true" />
+	</links>
+	<annotations>
+		<text id="0" type="text/plain" rect="(87.0, 164.0, 160.0, 97.0)" font-family="Helvetica" font-size="14">File Widget. Klik 2x untuk membuka widget tsb. File WIdget berfungsi untuk import data</text>
+		<text id="1" type="text/plain" rect="(252.0, 387.0, 118.0, 46.0)" font-family="Helvetica" font-size="14">Output dari File Widget </text>
+		<text id="2" type="text/plain" rect="(510.0, 392.0, 131.0, 46.0)" font-family="Helvetica" font-size="14">Input yang berasal dari File Widget</text>
+		<text id="3" type="text/plain" rect="(374.0, 468.0, 150.0, 82.0)" font-family="Helvetica" font-size="14">Jembatan penghubungan antara File Widget degan Data Table Widget</text>
+		<text id="4" type="text/plain" rect="(505.0, 150.0, 150.0, 97.0)" font-family="Helvetica" font-size="14">Data Table Widget berfungsi untuk melihat data dalam bentuk table (spreadsheet)</text>
+		<text id="5" type="text/plain" rect="(696.0, 239.0, 150.0, 114.0)" font-family="Helvetica" font-size="14">Output dari Data Table adalah sebuah data yang bisa dipilih untuk selanjutnya dikoneksikan ke widget lainnya.</text>
+		<text id="6" type="text/plain" rect="(770.0, 348.0, 216.0, 181.0)" font-family="Helvetica" font-size="14">Output dari Data Table belum dikoneksikan ke dalam widget lain.</text>
+		<arrow id="7" start="(168.00000000000006, 245.00000000000006)" end="(167.00000000000006, 291.00000000000006)" fill="#C1272D" />
+		<arrow id="8" start="(560.0, 257.0)" end="(566.0, 300.0)" fill="#C1272D" />
+		<arrow id="9" start="(342.0, 387.0)" end="(319.0, 338.0)" fill="#C1272D" />
+		<arrow id="10" start="(517.9999999999999, 389.0)" end="(524.9999999999999, 336.0)" fill="#C1272D" />
+		<arrow id="11" start="(432.00000000000006, 468.0)" end="(431.00000000000006, 330.0)" fill="#C1272D" />
+		<arrow id="12" start="(769.0, 369.0)" end="(609.0, 338.0)" fill="#39B54A" />
+		<arrow id="13" start="(695.0, 276.0)" end="(608.0, 312.0)" fill="#C1272D" />
+		<text id="14" type="text/plain" rect="(78.0, 594.0, 462.0, 78.0)" font-family="MS Shell Dlg 2" font-size="16">1-File Widget
+2-Data Table Widget</text>
+	</annotations>
+	<thumbnail />
+	<node_properties>
+		<properties node_id="0" format="pickle">gASV4QMAAAAAAAB9lCiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjAxyZWNlbnRfcGF0aHOUXZSMHm9y
+YW5nZXdpZGdldC51dGlscy5maWxlZGlhbG9nc5SMClJlY2VudFBhdGiUk5QpgZR9lCiMB2Fic3Bh
+dGiUjEJDOi9Qcm9ncmFtIEZpbGVzL09yYW5nZS9MaWIvc2l0ZS1wYWNrYWdlcy9PcmFuZ2UvZGF0
+YXNldHMvaXJpcy50YWKUjAZwcmVmaXiUjA9zYW1wbGUtZGF0YXNldHOUjAdyZWxwYXRolIwIaXJp
+cy50YWKUjAV0aXRsZZSMAJSMBXNoZWV0lGgQjAtmaWxlX2Zvcm1hdJROdWJhjAtyZWNlbnRfdXJs
+c5RdlIwTc2F2ZWRXaWRnZXRHZW9tZXRyeZRDQgHZ0MsAAwAAAAAJNQAAAGsAAAuuAAADAAAACTYA
+AACAAAALrQAAAv8AAAABAAAAAAeAAAAJNgAAAIAAAAutAAAC/5SMC3NoZWV0X25hbWVzlH2UjAZz
+b3VyY2WUSwCMA3VybJRoEIwNZG9tYWluX2VkaXRvcpR9lIwLX192ZXJzaW9uX1+USwGMEGNvbnRl
+eHRfc2V0dGluZ3OUXZSMFW9yYW5nZXdpZGdldC5zZXR0aW5nc5SMB0NvbnRleHSUk5QpgZR9lCiM
+BHRpbWWUR0HWpxYMultfjAZ2YWx1ZXOUfZQojAl2YXJpYWJsZXOUXZRoG32UaChdlChdlCiMDHNl
+cGFsIGxlbmd0aJSMFE9yYW5nZS5kYXRhLnZhcmlhYmxllIwSQ29udGludW91c1ZhcmlhYmxllJOU
+SwBoEIhlXZQojAtzZXBhbCB3aWR0aJRoMEsAaBCIZV2UKIwMcGV0YWwgbGVuZ3RolGgwSwBoEIhl
+XZQojAtwZXRhbCB3aWR0aJRoMEsAaBCIZV2UKIwEaXJpc5RoLowQRGlzY3JldGVWYXJpYWJsZZST
+lEsBjCxJcmlzLXNldG9zYSwgSXJpcy12ZXJzaWNvbG9yLCBJcmlzLXZpcmdpbmljYZSJZWVzaB1L
+AXWMCmF0dHJpYnV0ZXOUKIwMc2VwYWwgbGVuZ3RolEsChpSMC3NlcGFsIHdpZHRolEsChpSMDHBl
+dGFsIGxlbmd0aJRLAoaUjAtwZXRhbCB3aWR0aJRLAoaUdJSMBW1ldGFzlCmMCmNsYXNzX3ZhcnOU
+jARpcmlzlF2UKIwLSXJpcy1zZXRvc2GUjA9JcmlzLXZlcnNpY29sb3KUjA5JcmlzLXZpcmdpbmlj
+YZRlhpSFlIwSbW9kaWZpZWRfdmFyaWFibGVzlF2UdWJhdS4=
+</properties>
+		<properties node_id="1" format="literal">{'auto_commit': True, 'color_by_class': True, 'controlAreaVisible': True, 'dist_color_RGB': (220, 220, 220, 255), 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\t\xaf\x00\x00\x00\xf5\x00\x00\x0c\xd0\x00\x00\x02\xfe\x00\x00\t\xb0\x00\x00\x01\n\x00\x00\x0c\xcf\x00\x00\x02\xfd\x00\x00\x00\x01\x00\x00\x00\x00\x07\x80\x00\x00\t\xb0\x00\x00\x01\n\x00\x00\x0c\xcf\x00\x00\x02\xfd', 'select_rows': True, 'selected_cols': [], 'selected_rows': [], 'show_attribute_labels': True, 'show_distributions': False, '__version__': 2}</properties>
+	</node_properties>
+	<session_state>
+		<window_groups />
+	</session_state>
+</scheme>
