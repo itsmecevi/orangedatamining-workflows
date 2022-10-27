@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='utf-8'?>
+<scheme version="2.0" title="Interactive Visualizations" description="Most of visualizations in Orange are interactive. Like Scatter Plot. Double click its icon to open the plot and by click-and-drag select few data instances (points in the plot). Selected data will automatically propagate to Data Table. Double click its widget to check which data was selected. Change selection and observe the change in the Data Table. This works best if both widgets are open.">
+	<nodes>
+		<node id="0" name="File" qualified_name="Orange.widgets.data.owfile.OWFile" project_name="Orange3" version="" title="File" position="(163.0, 428.0)" />
+		<node id="1" name="Scatter Plot" qualified_name="Orange.widgets.visualize.owscatterplot.OWScatterPlot" project_name="Orange3" version="" title="Scatter Plot" position="(619.0, 427.0)" />
+		<node id="2" name="Data Table" qualified_name="Orange.widgets.data.owtable.OWDataTable" project_name="Orange3" version="" title="Data Table" position="(988.0, 425.0)" />
+		<node id="3" name="Data Table" qualified_name="Orange.widgets.data.owtable.OWDataTable" project_name="Orange3" version="" title="Data Table (1)" position="(802.4285714285716, 595.7142857142858)" />
+	</nodes>
+	<links>
+		<link id="0" source_node_id="0" sink_node_id="1" source_channel="Data" sink_channel="Data" enabled="true" />
+		<link id="1" source_node_id="1" sink_node_id="2" source_channel="Selected Data" sink_channel="Data" enabled="true" />
+		<link id="2" source_node_id="1" sink_node_id="3" source_channel="Data" sink_channel="Data" enabled="true" />
+	</links>
+	<annotations>
+		<arrow id="0" start="(172.0, 313.00000000000006)" end="(173.0, 370.00000000000006)" fill="#C1272D" />
+		<arrow id="1" start="(661.0, 343.0)" end="(660.0, 399.0)" fill="#C1272D" />
+		<arrow id="2" start="(855.0, 341.0)" end="(807.0, 402.0)" fill="#C1272D" />
+		<arrow id="3" start="(192.99999999999983, 532.0)" end="(334.9999999999998, 449.0)" fill="#39B54A" />
+		<text id="4" type="text/plain" rect="(43.0, 206.0, 264.0, 112.0)" font-family="MS Shell Dlg 2" font-size="16">File Widget membaca iris dataset yang ada di direktori contoh file.
+
+Double klik untuk merubah file apa yang diimpor.</text>
+		<text id="5" type="text/plain" rect="(317.0, 306.0, 186.0, 89.0)" font-family="MS Shell Dlg 2" font-size="16">Channel pengubung antara File Widget dengan Scatter Plot Widget:</text>
+		<text id="6" type="text/plain" rect="(38.0, 536.0, 277.0, 132.0)" font-family="MS Shell Dlg 2" font-size="16">Di dalam channel terdapat pilihan untuk menyambungkan ke dalam data dan juga data subset
+
+data subset: data yang dipilih terlebih dahulu di File Widget</text>
+		<text id="7" type="text/plain" rect="(555.0, 259.0, 214.0, 67.0)" font-family="MS Shell Dlg 2" font-size="16">Double klik untuk melihat hasil visual dari Scatter Plot Widget</text>
+		<text id="8" type="text/plain" rect="(800.0, 227.0, 222.0, 92.0)" font-family="MS Shell Dlg 2" font-size="16">Di dalam Scatter Plot Widget yang dipilih adalah Selected Data yang masuk ke dalam Data Table Widget</text>
+		<text id="9" type="text/plain" rect="(1025.0, 604.0, 263.0, 92.0)" font-family="MS Shell Dlg 2" font-size="16">Yang terlihat di dalam Data Table Widget adalah yang dipilih (Selected Data) di dalam Scatter Plot Widget</text>
+		<arrow id="10" start="(1170.0, 573.0)" end="(1028.0, 470.0)" fill="#C1272D" />
+		<text id="11" type="text/plain" rect="(334.2857142857142, 614.2857142857143, 435.7142857142858, 105.71428571428567)" font-family="MS Shell Dlg 2" font-size="16">1. Jika Data-Data: tidak akan ada perubahan data yang mengalir
+2. Jika Selected Data-Data: akan ada perubahan data sesuai dengan data yang di pointer/dipilih</text>
+	</annotations>
+	<thumbnail />
+	<node_properties>
+		<properties node_id="0" format="pickle">gASV4QMAAAAAAAB9lCiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjAxyZWNlbnRfcGF0aHOUXZSMHm9y
+YW5nZXdpZGdldC51dGlscy5maWxlZGlhbG9nc5SMClJlY2VudFBhdGiUk5QpgZR9lCiMB2Fic3Bh
+dGiUjEJDOi9Qcm9ncmFtIEZpbGVzL09yYW5nZS9MaWIvc2l0ZS1wYWNrYWdlcy9PcmFuZ2UvZGF0
+YXNldHMvaXJpcy50YWKUjAZwcmVmaXiUjA9zYW1wbGUtZGF0YXNldHOUjAdyZWxwYXRolIwIaXJp
+cy50YWKUjAV0aXRsZZSMAJSMBXNoZWV0lGgQjAtmaWxlX2Zvcm1hdJROdWJhjAtyZWNlbnRfdXJs
+c5RdlIwTc2F2ZWRXaWRnZXRHZW9tZXRyeZRDQgHZ0MsAAwAAAAAA8QAAABAAAAQRAAACrwAAAPIA
+AAAuAAAEEAAAAq4AAAAAAAAAAAUAAAAA8gAAAC4AAAQQAAACrpSMC3NoZWV0X25hbWVzlH2UjAZz
+b3VyY2WUSwCMA3VybJRoEIwNZG9tYWluX2VkaXRvcpR9lIwLX192ZXJzaW9uX1+USwGMEGNvbnRl
+eHRfc2V0dGluZ3OUXZSMFW9yYW5nZXdpZGdldC5zZXR0aW5nc5SMB0NvbnRleHSUk5QpgZR9lCiM
+BHRpbWWUR0HWpxYjr9mQjAZ2YWx1ZXOUfZQojAl2YXJpYWJsZXOUXZRoG32UaChdlChdlCiMDHNl
+cGFsIGxlbmd0aJSMFE9yYW5nZS5kYXRhLnZhcmlhYmxllIwSQ29udGludW91c1ZhcmlhYmxllJOU
+SwBoEIhlXZQojAtzZXBhbCB3aWR0aJRoMEsAaBCIZV2UKIwMcGV0YWwgbGVuZ3RolGgwSwBoEIhl
+XZQojAtwZXRhbCB3aWR0aJRoMEsAaBCIZV2UKIwEaXJpc5RoLowQRGlzY3JldGVWYXJpYWJsZZST
+lEsBjCxJcmlzLXNldG9zYSwgSXJpcy12ZXJzaWNvbG9yLCBJcmlzLXZpcmdpbmljYZSJZWVzaB1L
+AXWMCmF0dHJpYnV0ZXOUKIwMc2VwYWwgbGVuZ3RolEsChpSMC3NlcGFsIHdpZHRolEsChpSMDHBl
+dGFsIGxlbmd0aJRLAoaUjAtwZXRhbCB3aWR0aJRLAoaUdJSMBW1ldGFzlCmMCmNsYXNzX3ZhcnOU
+jARpcmlzlF2UKIwLSXJpcy1zZXRvc2GUjA9JcmlzLXZlcnNpY29sb3KUjA5JcmlzLXZpcmdpbmlj
+YZRlhpSFlIwSbW9kaWZpZWRfdmFyaWFibGVzlF2UdWJhdS4=
+</properties>
+		<properties node_id="1" format="pickle">gASVUwQAAAAAAAB9lCiMC2F1dG9fY29tbWl0lIiMC2F1dG9fc2FtcGxllIiMEmNvbnRyb2xBcmVh
+VmlzaWJsZZSIjBNzYXZlZFdpZGdldEdlb21ldHJ5lENCAdnQywADAAD/////////+QAABQAAAAKg
+AAAAAAAAABcAAAT/AAACnwAAAAACAAAABQAAAAAAAAAAFwAABP8AAAKflIwJc2VsZWN0aW9ulF2U
+KEsOjBVudW1weS5jb3JlLm11bHRpYXJyYXmUjAZzY2FsYXKUk5SMBW51bXB5lIwFZHR5cGWUk5SM
+AnUxlImIh5RSlChLA4wBfJROTk5K/////0r/////SwB0lGJDAQGUhpRSlIaUSxJoCmgQaBOGlFKU
+hpRLJGgKaBBoE4aUUpSGlEszaApoEGgThpRSlIaUSzhoCmgQaBOGlFKUhpRLRmgKaBBoE4aUUpSG
+lEtVaApoEGgThpRSlIaUS2RoCmgQaBOGlFKUhpRLbmgKaBBoE4aUUpSGlEtzaApoEGgThpRSlIaU
+S3xoCmgQaBOGlFKUhpRLiGgKaBBoE4aUUpSGlEuPaApoEGgThpRSlIaUS5BoCmgQaBOGlFKUhpRL
+lGgKaBBoE4aUUpSGlGWMEXRvb2x0aXBfc2hvd3NfYWxslIiMD3Zpc3VhbF9zZXR0aW5nc5R9lIwF
+Z3JhcGiUfZQojAthbHBoYV92YWx1ZZRLgIwNY2xhc3NfZGVuc2l0eZSJjBFqaXR0ZXJfY29udGlu
+dW91c5SJjAtqaXR0ZXJfc2l6ZZRLCowTbGFiZWxfb25seV9zZWxlY3RlZJSJjBZvcnRob25vcm1h
+bF9yZWdyZXNzaW9ulImMC3BvaW50X3dpZHRolEsKjAlzaG93X2dyaWSUiYwLc2hvd19sZWdlbmSU
+iIwNc2hvd19yZWdfbGluZZSJdYwLX192ZXJzaW9uX1+USwWMEGNvbnRleHRfc2V0dGluZ3OUXZSM
+FW9yYW5nZXdpZGdldC5zZXR0aW5nc5SMB0NvbnRleHSUk5QpgZR9lCiMCmF0dHJpYnV0ZXOUfZQo
+jAtzZXBhbCB3aWR0aJRLAowEaXJpc5RLAYwLcGV0YWwgd2lkdGiUSwKMDHNlcGFsIGxlbmd0aJRL
+AowMcGV0YWwgbGVuZ3RolEsCdYwEdGltZZRHQdanFiO87xuMBW1ldGFzlH2UjAZ2YWx1ZXOUfZQo
+jAphdHRyX2NvbG9ylIwEaXJpc5RLZYaUjAphdHRyX2xhYmVslE5K/v///4aUjAphdHRyX3NoYXBl
+lE5K/v///4aUjAlhdHRyX3NpemWUTkr+////hpSMBmF0dHJfeJSMDHNlcGFsIGxlbmd0aJRLZoaU
+jAZhdHRyX3mUjAtzZXBhbCB3aWR0aJRLZoaUaER9lGhQSwV1jA5vcmRlcmVkX2RvbWFpbpRdlCho
+XUsChpRoWksChpRoXksChpRoXEsChpRoW0sBhpRldWJhdS4=
+</properties>
+		<properties node_id="2" format="literal">{'auto_commit': True, 'color_by_class': True, 'controlAreaVisible': True, 'dist_color_RGB': (220, 220, 220, 255), 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x01@\x00\x00\x00`\x00\x00\x03\xc1\x00\x00\x02^\x00\x00\x01A\x00\x00\x00~\x00\x00\x03\xc0\x00\x00\x02]\x00\x00\x00\x00\x00\x00\x00\x00\x05\x00\x00\x00\x01A\x00\x00\x00~\x00\x00\x03\xc0\x00\x00\x02]', 'select_rows': True, 'selected_cols': [], 'selected_rows': [], 'show_attribute_labels': True, 'show_distributions': False, '__version__': 2}</properties>
+		<properties node_id="3" format="literal">{'auto_commit': True, 'color_by_class': True, 'controlAreaVisible': True, 'dist_color_RGB': (220, 220, 220, 255), 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x01@\x00\x00\x00`\x00\x00\x03\xc1\x00\x00\x02^\x00\x00\x01A\x00\x00\x00~\x00\x00\x03\xc0\x00\x00\x02]\x00\x00\x00\x00\x00\x00\x00\x00\x05\x00\x00\x00\x01A\x00\x00\x00~\x00\x00\x03\xc0\x00\x00\x02]', 'select_rows': True, 'selected_cols': [], 'selected_rows': [], 'show_attribute_labels': True, 'show_distributions': False, '__version__': 2}</properties>
+	</node_properties>
+	<session_state>
+		<window_groups />
+	</session_state>
+</scheme>
