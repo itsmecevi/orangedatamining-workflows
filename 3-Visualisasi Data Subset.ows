@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='utf-8'?>
+<scheme version="2.0" title="Visualization of Data Subsets" description="Some visualization widgets, like Scatter Plot and several data project widgets, can expose the data instances in the data subset. In this workflow, Scatter Plot visualize the data from the input data file, but also marks the data points that have been selected in the Data Table (selected rows).&#10;&#10;Again, this workflow works best if both Scatter Plot and Data Table are open.">
+	<nodes>
+		<node id="0" name="File" qualified_name="Orange.widgets.data.owfile.OWFile" project_name="Orange3" version="" title="File" position="(-11.0, 232.0)" />
+		<node id="1" name="Scatter Plot" qualified_name="Orange.widgets.visualize.owscatterplot.OWScatterPlot" project_name="Orange3" version="" title="Scatter Plot" position="(1045.0, 235.0)" />
+		<node id="2" name="Data Table" qualified_name="Orange.widgets.data.owtable.OWDataTable" project_name="Orange3" version="" title="Data Table" position="(207.42857142857142, 589.4285714285714)" />
+	</nodes>
+	<links>
+		<link id="0" source_node_id="0" sink_node_id="2" source_channel="Data" sink_channel="Data" enabled="true" />
+		<link id="1" source_node_id="2" sink_node_id="1" source_channel="Selected Data" sink_channel="Data Subset" enabled="true" />
+		<link id="2" source_node_id="0" sink_node_id="1" source_channel="Data" sink_channel="Data" enabled="true" />
+	</links>
+	<annotations>
+		<text id="0" type="text/plain" rect="(113.0, 725.0, 298.0, 100.0)" font-family="MS Shell Dlg 2" font-size="16">Pilihlah dengan menggunakan Cursor atau Shift sebuah data yang akan dimunculkan. Kita sebut data yang terpilih tersebut adalah Selected Data</text>
+		<arrow id="1" start="(155.0, 702.0)" end="(209.0, 654.0)" fill="#C1272D" />
+		<text id="2" type="text/plain" rect="(596.0, 573.0, 319.0, 129.0)" font-family="MS Shell Dlg 2" font-size="16">Double Klik di dalam Channel ini untuk melihat apakah yang mengalir/tersambung ke dalam Scatter Plot Widget adalah dari Selected Data dan menjadi Data Subset di dalam Scatter Plot</text>
+		<arrow id="3" start="(746.0, 527.0)" end="(623.0, 434.0)" fill="#C1272D" />
+		<text id="4" type="text/plain" rect="(242.0, 91.0, 430.0, 137.0)" font-family="MS Shell Dlg 2" font-size="16">Untuk Channel dari File Widget ke Scatter Plot Widget harus dari data yang asli. Maka Data ke Data dalam pemilihan di dalam Channel nya.</text>
+		<arrow id="5" start="(624.0, 145.0)" end="(586.0, 192.0)" fill="#C1272D" />
+		<text id="6" type="text/plain" rect="(964.2857142857143, 395.7142857142857, 228.57142857142856, 220.00000000000006)" font-family="MS Shell Dlg 2" font-size="16">1. Data
+2. Selected Data
+3. Data Subset</text>
+	</annotations>
+	<thumbnail />
+	<node_properties>
+		<properties node_id="0" format="pickle">gASV4QMAAAAAAAB9lCiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjAxyZWNlbnRfcGF0aHOUXZSMHm9y
+YW5nZXdpZGdldC51dGlscy5maWxlZGlhbG9nc5SMClJlY2VudFBhdGiUk5QpgZR9lCiMB2Fic3Bh
+dGiUjEJDOi9Qcm9ncmFtIEZpbGVzL09yYW5nZS9MaWIvc2l0ZS1wYWNrYWdlcy9PcmFuZ2UvZGF0
+YXNldHMvaXJpcy50YWKUjAZwcmVmaXiUjA9zYW1wbGUtZGF0YXNldHOUjAdyZWxwYXRolIwIaXJp
+cy50YWKUjAV0aXRsZZSMAJSMBXNoZWV0lGgQjAtmaWxlX2Zvcm1hdJROdWJhjAtyZWNlbnRfdXJs
+c5RdlIwTc2F2ZWRXaWRnZXRHZW9tZXRyeZRDQgHZ0MsAAwAAAAABdwAAADoAAAOLAAAChQAAAXgA
+AABYAAADigAAAoQAAAAAAAAAAAUAAAABeAAAAFgAAAOKAAAChJSMC3NoZWV0X25hbWVzlH2UjAZz
+b3VyY2WUSwCMA3VybJRoEIwNZG9tYWluX2VkaXRvcpR9lIwLX192ZXJzaW9uX1+USwGMEGNvbnRl
+eHRfc2V0dGluZ3OUXZSMFW9yYW5nZXdpZGdldC5zZXR0aW5nc5SMB0NvbnRleHSUk5QpgZR9lCiM
+BHRpbWWUR0HWpxYrsGRijAZ2YWx1ZXOUfZQojAl2YXJpYWJsZXOUXZRoG32UaChdlChdlCiMDHNl
+cGFsIGxlbmd0aJSMFE9yYW5nZS5kYXRhLnZhcmlhYmxllIwSQ29udGludW91c1ZhcmlhYmxllJOU
+SwBoEIhlXZQojAtzZXBhbCB3aWR0aJRoMEsAaBCIZV2UKIwMcGV0YWwgbGVuZ3RolGgwSwBoEIhl
+XZQojAtwZXRhbCB3aWR0aJRoMEsAaBCIZV2UKIwEaXJpc5RoLowQRGlzY3JldGVWYXJpYWJsZZST
+lEsBjCxJcmlzLXNldG9zYSwgSXJpcy12ZXJzaWNvbG9yLCBJcmlzLXZpcmdpbmljYZSJZWVzaB1L
+AXWMCmF0dHJpYnV0ZXOUKIwMc2VwYWwgbGVuZ3RolEsChpSMC3NlcGFsIHdpZHRolEsChpSMDHBl
+dGFsIGxlbmd0aJRLAoaUjAtwZXRhbCB3aWR0aJRLAoaUdJSMBW1ldGFzlCmMCmNsYXNzX3ZhcnOU
+jARpcmlzlF2UKIwLSXJpcy1zZXRvc2GUjA9JcmlzLXZlcnNpY29sb3KUjA5JcmlzLXZpcmdpbmlj
+YZRlhpSFlIwSbW9kaWZpZWRfdmFyaWFibGVzlF2UdWJhdS4=
+</properties>
+		<properties node_id="1" format="pickle">gASVJwMAAAAAAAB9lCiMC2F1dG9fY29tbWl0lIiMC2F1dG9fc2FtcGxllIiMEmNvbnRyb2xBcmVh
+VmlzaWJsZZSIjBNzYXZlZFdpZGdldEdlb21ldHJ5lENCAdnQywADAAAAAAFAAAAAYAAAA8EAAAJe
+AAABQQAAAH4AAAPAAAACXQAAAAAAAAAABQAAAAFBAAAAfgAAA8AAAAJdlIwJc2VsZWN0aW9ulE6M
+EXRvb2x0aXBfc2hvd3NfYWxslIiMD3Zpc3VhbF9zZXR0aW5nc5R9lIwFZ3JhcGiUfZQojAthbHBo
+YV92YWx1ZZRLgIwNY2xhc3NfZGVuc2l0eZSJjBFqaXR0ZXJfY29udGludW91c5SJjAtqaXR0ZXJf
+c2l6ZZRLCowTbGFiZWxfb25seV9zZWxlY3RlZJSJjBZvcnRob25vcm1hbF9yZWdyZXNzaW9ulImM
+C3BvaW50X3dpZHRolEsKjAlzaG93X2dyaWSUiYwLc2hvd19sZWdlbmSUiIwNc2hvd19yZWdfbGlu
+ZZSJdYwLX192ZXJzaW9uX1+USwWMEGNvbnRleHRfc2V0dGluZ3OUXZSMFW9yYW5nZXdpZGdldC5z
+ZXR0aW5nc5SMB0NvbnRleHSUk5QpgZR9lCiMDm9yZGVyZWRfZG9tYWlulF2UKIwMc2VwYWwgbGVu
+Z3RolEsChpSMC3NlcGFsIHdpZHRolEsChpSMDHBldGFsIGxlbmd0aJRLAoaUjAtwZXRhbCB3aWR0
+aJRLAoaUjARpcmlzlEsBhpRljAVtZXRhc5R9lIwKYXR0cmlidXRlc5R9lChoJksCaCBLAmgoSwFo
+JEsCaCJLAnWMBnZhbHVlc5R9lCiMCmF0dHJfY29sb3KUjARpcmlzlEtlhpSMCmF0dHJfbGFiZWyU
+Tkr+////hpSMCmF0dHJfc2hhcGWUTkr+////hpSMCWF0dHJfc2l6ZZROSv7///+GlIwGYXR0cl94
+lIwMc2VwYWwgbGVuZ3RolEtmhpSMBmF0dHJfeZSMC3NlcGFsIHdpZHRolEtmhpRoCn2UaBZLBXWM
+BHRpbWWUR0HWpxYrxbX6dWJhdS4=
+</properties>
+		<properties node_id="2" format="literal">{'auto_commit': True, 'color_by_class': True, 'controlAreaVisible': True, 'dist_color_RGB': (220, 220, 220, 255), 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x01@\x00\x00\x00`\x00\x00\x03\xc1\x00\x00\x02^\x00\x00\x01A\x00\x00\x00~\x00\x00\x03\xc0\x00\x00\x02]\x00\x00\x00\x00\x00\x00\x00\x00\x05\x00\x00\x00\x01A\x00\x00\x00~\x00\x00\x03\xc0\x00\x00\x02]', 'select_rows': True, 'selected_cols': [0, 1, 2, 3, 4], 'selected_rows': [6, 75, 97, 101, 105, 109, 135, 137, 141, 144], 'show_attribute_labels': True, 'show_distributions': False, '__version__': 2}</properties>
+	</node_properties>
+	<session_state>
+		<window_groups />
+	</session_state>
+</scheme>
