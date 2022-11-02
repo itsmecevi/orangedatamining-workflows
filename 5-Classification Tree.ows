@@ -1,0 +1,106 @@
+<?xml version='1.0' encoding='utf-8'?>
+<scheme version="2.0" title="Classification Tree" description="This workflow combines the inference and visualization of classification trees with a scatterplot. When both the tree browser and the scatterplot are open, selection of any node of the tree sends the related data instances to scatterplot. In the workflow, the selected data is treated as a subset of the entire dataset and is highlighted in the scatterplot. With simple combination of widgets we have constructed an interactive classification tree browser.">
+	<nodes>
+		<node id="0" name="File" qualified_name="Orange.widgets.data.owfile.OWFile" project_name="Orange3" version="" title="File" position="(-145.125, 155.625)" />
+		<node id="1" name="Tree Viewer" qualified_name="Orange.widgets.visualize.owtreeviewer.OWTreeGraph" project_name="Orange3" version="" title="Classification Tree Viewer" position="(238.375, 363.2638888888888)" />
+		<node id="2" name="Scatter Plot" qualified_name="Orange.widgets.visualize.owscatterplot.OWScatterPlot" project_name="Orange3" version="" title="Scatter Plot" position="(512.5000000000001, 153.26388888888889)" />
+		<node id="3" name="Box Plot" qualified_name="Orange.widgets.visualize.owboxplot.OWBoxPlot" project_name="Orange3" version="" title="Box Plot" position="(538.7361111111112, 435.125)" />
+		<node id="4" name="Tree" qualified_name="Orange.widgets.model.owtree.OWTreeLearner" project_name="Orange3" version="" title="Classification Tree" position="(-48.12499999999999, 362.2638888888889)" />
+	</nodes>
+	<links>
+		<link id="0" source_node_id="0" sink_node_id="2" source_channel="Data" sink_channel="Data" enabled="true" />
+		<link id="1" source_node_id="0" sink_node_id="4" source_channel="Data" sink_channel="Data" enabled="true" />
+		<link id="2" source_node_id="4" sink_node_id="1" source_channel="Model" sink_channel="Tree" enabled="true" />
+		<link id="3" source_node_id="1" sink_node_id="2" source_channel="Selected Data" sink_channel="Data Subset" enabled="true" />
+		<link id="4" source_node_id="1" sink_node_id="3" source_channel="Data" sink_channel="Data" enabled="true" />
+	</links>
+	<annotations>
+		<arrow id="0" start="(-91.125, 91.62499999999999)" end="(-130.125, 126.62499999999999)" fill="#C1272D" />
+		<text id="1" type="text/plain" rect="(-85.125, 64.625, 174.0, 80.0)" font-family="Helvetica" font-size="14">File Widget: Impor Iris Dataset di direktori ODM</text>
+		<text id="2" type="text/plain" rect="(169.125, 101.25, 150.0, 31.375)" font-family="Helvetica" font-size="14">Channel: Data-Data</text>
+		<text id="3" type="text/plain" rect="(-212.0, 524.625, 280.0, 63.0)" font-family="Helvetica" font-size="14">1. Classification Tree
+2. Classification Tree Viewer
+3. Scatter Plot</text>
+		<text id="4" type="text/plain" rect="(3.125, 448.75, 118.125, 72.0)" font-family="MS Shell Dlg 2" font-size="16">Algoritma Classification Tree</text>
+		<arrow id="5" start="(-0.625, 464.375)" end="(-30.625, 427.5)" fill="#C1272D" />
+		<text id="6" type="text/plain" rect="(161.875, 438.125, 161.25, 86.375)" font-family="MS Shell Dlg 2" font-size="16">Classification Tree Viewer untuk melihat hasil classification</text>
+	</annotations>
+	<thumbnail />
+	<node_properties>
+		<properties node_id="0" format="pickle">gASVngYAAAAAAAB9lCiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjAxyZWNlbnRfcGF0aHOUXZQojB5v
+cmFuZ2V3aWRnZXQudXRpbHMuZmlsZWRpYWxvZ3OUjApSZWNlbnRQYXRolJOUKYGUfZQojAdhYnNw
+YXRolIxCQzovUHJvZ3JhbSBGaWxlcy9PcmFuZ2UvTGliL3NpdGUtcGFja2FnZXMvT3JhbmdlL2Rh
+dGFzZXRzL2lyaXMudGFilIwGcHJlZml4lIwPc2FtcGxlLWRhdGFzZXRzlIwHcmVscGF0aJSMCGly
+aXMudGFilIwFdGl0bGWUjACUjAVzaGVldJRoEIwLZmlsZV9mb3JtYXSUTnViaAYpgZR9lChoCYxF
+QzovUHJvZ3JhbSBGaWxlcy9PcmFuZ2UvTGliL3NpdGUtcGFja2FnZXMvT3JhbmdlL2RhdGFzZXRz
+L3RpdGFuaWMudGFilGgLaAxoDYwLdGl0YW5pYy50YWKUaA9oEGgRaBBoEk51YmgGKYGUfZQoaAmM
+RUM6L1Byb2dyYW0gRmlsZXMvT3JhbmdlL0xpYi9zaXRlLXBhY2thZ2VzL09yYW5nZS9kYXRhc2V0
+cy9ob3VzaW5nLnRhYpRoC2gMaA2MC2hvdXNpbmcudGFilGgPaBBoEWgQaBJOdWJoBimBlH2UKGgJ
+jEtDOi9Qcm9ncmFtIEZpbGVzL09yYW5nZS9MaWIvc2l0ZS1wYWNrYWdlcy9PcmFuZ2UvZGF0YXNl
+dHMvaGVhcnRfZGlzZWFzZS50YWKUaAtoDGgNjBFoZWFydF9kaXNlYXNlLnRhYpRoD2gQaBFoEGgS
+TnViZYwLcmVjZW50X3VybHOUXZSME3NhdmVkV2lkZ2V0R2VvbWV0cnmUQ0IB2dDLAAMAAAAAAKAA
+AAAQAAAEYgAAAq8AAAChAAAALgAABGEAAAKuAAAAAAAAAAAFAAAAAKEAAAAuAAAEYQAAAq6UjAtz
+aGVldF9uYW1lc5R9lIwGc291cmNllEsAjAN1cmyUaBCMDWRvbWFpbl9lZGl0b3KUfZSMC19fdmVy
+c2lvbl9flEsBjBBjb250ZXh0X3NldHRpbmdzlF2UKIwVb3Jhbmdld2lkZ2V0LnNldHRpbmdzlIwH
+Q29udGV4dJSTlCmBlH2UKIwGdmFsdWVzlH2UKIwJdmFyaWFibGVzlF2UaCd9lGgzXZQoXZQojAxz
+ZXBhbCBsZW5ndGiUjBRPcmFuZ2UuZGF0YS52YXJpYWJsZZSMEkNvbnRpbnVvdXNWYXJpYWJsZZST
+lEsAaBCIZV2UKIwLc2VwYWwgd2lkdGiUaDtLAGgQiGVdlCiMDHBldGFsIGxlbmd0aJRoO0sAaBCI
+ZV2UKIwLcGV0YWwgd2lkdGiUaDtLAGgQiGVdlCiMBGlyaXOUaDmMEERpc2NyZXRlVmFyaWFibGWU
+k5RLAYwsSXJpcy1zZXRvc2EsIElyaXMtdmVyc2ljb2xvciwgSXJpcy12aXJnaW5pY2GUiWVlc2gp
+SwF1jAphdHRyaWJ1dGVzlCiMDHNlcGFsIGxlbmd0aJRLAoaUjAtzZXBhbCB3aWR0aJRLAoaUjAxw
+ZXRhbCBsZW5ndGiUSwKGlIwLcGV0YWwgd2lkdGiUSwKGlHSUjAVtZXRhc5QpjApjbGFzc192YXJz
+lIwEaXJpc5RdlCiMC0lyaXMtc2V0b3NhlIwPSXJpcy12ZXJzaWNvbG9ylIwOSXJpcy12aXJnaW5p
+Y2GUZYaUhZSMEm1vZGlmaWVkX3ZhcmlhYmxlc5RdlHViaC4pgZR9lChoUSloMX2UKIwJeGxzX3No
+ZWV0lGgQSv////+GlIwNZG9tYWluX2VkaXRvcpR9lIwJdmFyaWFibGVzlF2UKF2UKIwMc2VwYWwg
+bGVuZ3RolGg7SwBoEIhlXZQojAtzZXBhbCB3aWR0aJRoO0sAaBCIZV2UKIwMcGV0YWwgbGVuZ3Ro
+lGg7SwBoEIhlXZQojAtwZXRhbCB3aWR0aJRoO0sAaBCIZV2UKIwEaXJpc5RoRUsBjCxJcmlzLXNl
+dG9zYSwgSXJpcy12ZXJzaWNvbG9yLCBJcmlzLXZpcmdpbmljYZSJZWVzaGNdlGgpSwF1aEcoaGZL
+AoaUaGhLAoaUaGpLAoaUaGxLAoaUdJSMDm9yZGVyZWRfZG9tYWlulF2UKGhmSwKGlGhoSwKGlGhq
+SwKGlGhsSwKGlGhuSwGGlGWMBHRpbWWUR0HWKrDogdEYaFpdlGhSaG5LAYaUhZR1YmV1Lg==
+</properties>
+		<properties node_id="1" format="pickle">gASVrwEAAAAAAAB9lCiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjBFsaW5lX3dpZHRoX21ldGhvZJRL
+AowObWF4X25vZGVfd2lkdGiUS5aMDm1heF90cmVlX2RlcHRolEsAjBFyZWdyZXNzaW9uX2NvbG9y
+c5RLAIwTc2F2ZWRXaWRnZXRHZW9tZXRyeZRDQgHZ0MsAAwAA//////////kAAAUAAAACoAAAAAAA
+AAAXAAAE/wAAAp8AAAAAAgAAAAUAAAAAAAAAABcAAAT/AAACn5SMEXNob3dfaW50ZXJtZWRpYXRl
+lImMBHpvb22USwWMC19fdmVyc2lvbl9flEsBjBBjb250ZXh0X3NldHRpbmdzlF2UjBVvcmFuZ2V3
+aWRnZXQuc2V0dGluZ3OUjAdDb250ZXh0lJOUKYGUfZQojAZ2YWx1ZXOUfZQojBJ0YXJnZXRfY2xh
+c3NfaW5kZXiUSwBoCksBdYwEdGltZZRHQdYqsOoF80WMB2NsYXNzZXOUXZQojAtJcmlzLXNldG9z
+YZSMD0lyaXMtdmVyc2ljb2xvcpSMDklyaXMtdmlyZ2luaWNhlGV1YmF1Lg==
+</properties>
+		<properties node_id="2" format="pickle">gASVJwMAAAAAAAB9lCiMC2F1dG9fY29tbWl0lIiMC2F1dG9fc2FtcGxllIiMEmNvbnRyb2xBcmVh
+VmlzaWJsZZSIjBNzYXZlZFdpZGdldEdlb21ldHJ5lENCAdnQywADAAAAAADCAAAAVwAAA8EAAAJe
+AAAAwwAAAHUAAAPAAAACXQAAAAAAAAAABQAAAADDAAAAdQAAA8AAAAJdlIwJc2VsZWN0aW9ulE6M
+EXRvb2x0aXBfc2hvd3NfYWxslIiMD3Zpc3VhbF9zZXR0aW5nc5R9lIwFZ3JhcGiUfZQojAthbHBo
+YV92YWx1ZZRLgIwNY2xhc3NfZGVuc2l0eZSJjBFqaXR0ZXJfY29udGludW91c5SJjAtqaXR0ZXJf
+c2l6ZZRLCowTbGFiZWxfb25seV9zZWxlY3RlZJSJjBZvcnRob25vcm1hbF9yZWdyZXNzaW9ulImM
+C3BvaW50X3dpZHRolEsKjAlzaG93X2dyaWSUiYwLc2hvd19sZWdlbmSUiIwNc2hvd19yZWdfbGlu
+ZZSJdYwLX192ZXJzaW9uX1+USwWMEGNvbnRleHRfc2V0dGluZ3OUXZSMFW9yYW5nZXdpZGdldC5z
+ZXR0aW5nc5SMB0NvbnRleHSUk5QpgZR9lCiMBnZhbHVlc5R9lCiMCmF0dHJfY29sb3KUjARpcmlz
+lEtlhpSMCmF0dHJfbGFiZWyUTkr+////hpSMCmF0dHJfc2hhcGWUTkr+////hpSMCWF0dHJfc2l6
+ZZROSv7///+GlIwGYXR0cl94lIwMc2VwYWwgbGVuZ3RolEtmhpSMBmF0dHJfeZSMC3NlcGFsIHdp
+ZHRolEtmhpRoCn2UaBZLBXWMDm9yZGVyZWRfZG9tYWlulF2UKIwMc2VwYWwgbGVuZ3RolEsChpSM
+C3NlcGFsIHdpZHRolEsChpSMDHBldGFsIGxlbmd0aJRLAoaUjAtwZXRhbCB3aWR0aJRLAoaUjARp
+cmlzlEsBhpRljAphdHRyaWJ1dGVzlH2UKGgySwJoNEsCaDZLAmg4SwJoOksBdYwFbWV0YXOUfZSM
+BHRpbWWUR0HWKrDnPDbSdWJhdS4=
+</properties>
+		<properties node_id="3" format="pickle">gASV8wIAAAAAAAB9lCiMB2NvbXBhcmWUSwKMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjBNvcmRlcl9i
+eV9pbXBvcnRhbmNllImMHG9yZGVyX2dyb3VwaW5nX2J5X2ltcG9ydGFuY2WUiYwTc2F2ZWRXaWRn
+ZXRHZW9tZXRyeZRDQgHZ0MsAAwAAAAABQAAAAGAAAAPBAAACXgAAAUEAAAB+AAADwAAAAl0AAAAA
+AAAAAAUAAAABQQAAAH4AAAPAAAACXZSMEHNob3dfYW5ub3RhdGlvbnOUiIwLc2hvd19sYWJlbHOU
+iIwNc2lnX3RocmVzaG9sZJRHP6mZmZmZmZqMCnNvcnRfZnJlcXOUiYwIc3RhdHRlc3SUSwCMCXN0
+cmV0Y2hlZJSJjAtfX3ZlcnNpb25fX5RLAYwQY29udGV4dF9zZXR0aW5nc5RdlCiMFW9yYW5nZXdp
+ZGdldC5zZXR0aW5nc5SMB0NvbnRleHSUk5QpgZR9lCiMBnZhbHVlc5R9lCiMCWF0dHJpYnV0ZZSM
+C3NlcGFsIHdpZHRolEtmhpSMCWdyb3VwX3ZhcpSMBGlyaXOUS2WGlIwJc2VsZWN0aW9ulClK/v//
+/4aUaA1LAXWMCmF0dHJpYnV0ZXOUfZQojAxzZXBhbCBsZW5ndGiUSwJoGEsCjAxwZXRhbCBsZW5n
+dGiUSwKMC3BldGFsIHdpZHRolEsCaBtLAXWMBW1ldGFzlH2UjAhTZWxlY3RlZJRLAXN1YmgSKYGU
+fZQoaBV9lChoF2giS2aGlGgaaBtLZYaUaB0pSv7///+GlGgNSwF1jA5vcmRlcmVkX2RvbWFpbpRd
+lCiMDHNlcGFsIGxlbmd0aJRLAoaUjAtzZXBhbCB3aWR0aJRLAoaUjAxwZXRhbCBsZW5ndGiUSwKG
+lIwLcGV0YWwgd2lkdGiUSwKGlIwEaXJpc5RLAYaUZWgffZQoaC9LAmgxSwJoM0sCaDVLAmg3SwF1
+aCR9lIwEdGltZZRHQdYqsOoVKdx1YmV1Lg==
+</properties>
+		<properties node_id="4" format="literal">{'auto_apply': True, 'binary_trees': True, 'controlAreaVisible': True, 'learner_name': 'Classification Tree', 'limit_depth': True, 'limit_majority': True, 'limit_min_internal': True, 'limit_min_leaf': True, 'max_depth': 100, 'min_internal': 5, 'min_leaf': 2, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x01\xe8\x00\x00\x00\xcd\x00\x00\x03\x1c\x00\x00\x02\x04\x00\x00\x01\xe9\x00\x00\x00\xeb\x00\x00\x03\x1b\x00\x00\x02\x03\x00\x00\x00\x00\x00\x00\x00\x00\x05\x00\x00\x00\x01\xe9\x00\x00\x00\xeb\x00\x00\x03\x1b\x00\x00\x02\x03', 'sufficient_majority': 95, '__version__': 1}</properties>
+	</node_properties>
+	<session_state>
+		<window_groups />
+	</session_state>
+</scheme>
